@@ -52,15 +52,8 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ### Key Features <a name="key-features"></a>
 
-- **[Table creation using database]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](Coming soon)
+- **Animals table to store information**
+- **Insert and Query data in SQL**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
