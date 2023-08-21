@@ -67,3 +67,11 @@ CREATE TABLE visits (
     visit_date DATE,
     UNIQUE (vet_id, animal_id, visit_date)
 );
+
+
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+-- Drop the UNIQUE constraint from visits table
+ALTER TABLE visits
+DROP CONSTRAINT visits_vet_id_animal_id_visit_date_key;
