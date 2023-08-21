@@ -1,6 +1,6 @@
 /* Database schema to keep the structure of entire database. */
 
--- Create vet_clinic Database 
+-- Create vet_clinic Database
 CREATE DATABASE vet_clinic;
 
 -- Connect to vet_clinic Database
@@ -28,7 +28,7 @@ CREATE TABLE owners(
     id BIGSERIAL PRIMARY KEY,
     full_name VARCHAR(255),
     age INTEGER
-); 
+);
 
 CREATE TABLE species(
     id BIGSERIAL PRIMARY KEY,
@@ -50,7 +50,7 @@ CREATE TABLE vets(
     id BIGSERIAL PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
     age INTEGER,
-    date_of_graduation DATE 
+    date_of_graduation DATE
 );
 
 CREATE TABLE specializations(
@@ -75,3 +75,8 @@ ALTER TABLE owners ADD COLUMN email VARCHAR(120);
 -- Drop the UNIQUE constraint from visits table
 ALTER TABLE visits
 DROP CONSTRAINT visits_vet_id_animal_id_visit_date_key;
+
+-- Create indexes to improve perforomance
+CREATE INDEX index_animal_id ON visits (animal_id);
+CREATE INDEX index_vet_id ON visits (vet_id);
+CREATE INDEX index_email_owners ON owners (id);
