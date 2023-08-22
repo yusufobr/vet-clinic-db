@@ -174,3 +174,8 @@ JOIN vets vt ON vt.id = v.vet_id
 JOIN owners o ON o.id = a.owner_id
 WHERE o.full_name = 'Maisy Smith' GROUP BY s.id ORDER BY COUNT(*) DESC
 LIMIT 1;
+
+
+EXPLAIN ANALYZE SELECT COUNT(*) FROM visits where animal_id = 4;
+EXPLAIN ANALYZE SELECT * FROM visits where vet_id = 2;
+EXPLAIN ANALYZE SELECT * FROM owners where email = 'owner_18327@mail.com';
