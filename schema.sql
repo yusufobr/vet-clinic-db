@@ -79,4 +79,7 @@ DROP CONSTRAINT visits_vet_id_animal_id_visit_date_key;
 -- Create indexes to improve perforomance
 CREATE INDEX index_animal_id ON visits (animal_id);
 CREATE INDEX index_vet_id ON visits (vet_id);
-CREATE INDEX index_email_owners ON owners (id);
+CREATE INDEX index_email_owners ON owners (email);
+
+-- Sort the data in the table
+CLUSTER visits USING index_vet_id;
