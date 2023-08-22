@@ -77,11 +77,19 @@ Install this project with:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 Youssef OUBARI
+👤 **Youssef OUBARI**
 
 - GitHub: [@yusufobr](https://github.com/yusufobr)
 - Twitter: [@OubariY](https://twitter.com/OubariY)
 - LinkedIn: [Youssef OUBARI](https://www.linkedin.com/in/youssef-oubari-370451147)
+
+<br>
+
+👤 **Aamir Asaram**
+
+- GitHub: [@aamir-asaram](https://github.com/aamir-asaram)
+- Twitter: [@aaaaamir\_\_](https://twitter.com/aaaaamir__)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/aamir-asaram-089802213/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
